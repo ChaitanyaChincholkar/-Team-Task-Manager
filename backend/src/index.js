@@ -30,6 +30,8 @@
 // });
 
 require('dotenv').config();
+const { webcrypto } = require("crypto");
+global.crypto = webcrypto;
 
 const express = require('express');
 const mongoose = require('mongoose');
